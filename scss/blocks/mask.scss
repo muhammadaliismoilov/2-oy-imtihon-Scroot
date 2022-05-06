@@ -1,0 +1,25 @@
+.mask{
+
+    background-image: url(../../images/Mask-img.png);
+    background-repeat: no-repeat;
+
+    &--container{
+        display: flex;
+        align-items: center;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+
+    &__link{
+        padding: 8px 0;
+        background-color: #E5ECF4;
+        border-radius: 10px;
+    }
+    &__link + &__link{
+        margin-left: 18px;
+    }
+
+
+}
