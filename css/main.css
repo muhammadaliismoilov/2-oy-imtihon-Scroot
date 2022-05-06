@@ -558,4 +558,28 @@ img {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+
+.hero {
+  padding: 153px 0;
+  background-image: url(../../images/hero-desktop-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__heading {
+  max-width: 500px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+
+.hero__desc {
+  max-width: 405px;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
 /*# sourceMappingURL=main.css.map */
