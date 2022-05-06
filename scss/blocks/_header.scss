@@ -1,0 +1,99 @@
+.site-header{
+
+    &--container{
+        padding: 22px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu{
+        display: none;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+    &__nav{
+        margin-left: 58px;
+    }
+    &__nav-item{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+    &__nav-item + &__nav-item{
+        margin-left: 32px;
+    }
+    &__nav-item:hover{
+        color: #FCB72B;
+    }
+    &__nav-item:active{
+        color: #FCB72B;
+    }
+}
+@media only screen and( max-width:620px) {
+    .site-header{
+        position: relative;
+        &--container{
+            padding: 0;
+
+        }
+        &__menu{
+            display: inline-block;
+            border: none;
+            margin-left: 32px;
+            background-color: white;
+        }
+        &__left{
+            margin: 0 auto;
+        }
+        &__logo{
+            padding: 34px 0;
+
+        }
+        &__nav{
+            display: none;
+        }
+        .btn{
+            display: none;
+        }
+        &--open &__nav {
+            display:flex;
+            margin: 0;
+            padding: 64px 0 50% 0;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 70%;
+            background-color: #333A44;
+        }
+        &--open .btn{
+            position: absolute;
+            top: 500px;
+            position: absolute;
+            padding: 14px 39px;
+            background-color: #FCB72B;
+            border: 2px solid #FCB72B;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+
+        }
+        &--open &__nav-item{
+            // padding: 64px 0;
+            margin-left: 32px;
+        }
+        &--open &__nav-item + &__nav-item{
+            margin-left: 32px;
+            margin-top: 24px;
+        }
+
+
+
+    }
+}
