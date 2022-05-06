@@ -1,20 +1,25 @@
 .hero{
 
-    padding: 153px 0;
     background-image: url(../../images/hero-desktop-img.png);
-    // background-image: url(../../images/desktop-line.png);
-    background-size: cover;
+
+    background-position: center right;
     background-repeat: no-repeat;
 
-
+    &--container{
+        padding: 70px 0;
+    }
     &__heading{
 
         max-width: 500px;
         font-weight: 700;
         font-size: 56px;
         line-height: 56px;
-        // letter-spacing: -2.5px;
+        letter-spacing: -2.5px;
         color: #FFFFFF;
+    }
+    &__left-bottom{
+        margin-top: 80px;
+        margin-left: 80px;
     }
     &__desc{
         max-width: 405px;
@@ -24,13 +29,46 @@
         line-height: 25px;
         color: #FFFFFF;
     }
+    &__line-img{
+        // position: absolute;
+        // top: 400px;
+        background-position: left;
+        transform: translateX(-150px);
+    }
+    .btn{
+        margin-top: 40px;
+    }
 
 
+}
+@media only screen and(max-width:1110px) {
 
+    .hero{
 
+        &__left{
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__left-bottom{
 
+            margin: 0 auto;
+            margin-top: 0;
+            margin-left: 0;
+        }
+        &__desc{
+            max-width: 573px;
+            margin: 0 auto;
+        }
+        &__line-img{
+            // position: absolute;
+            // top: 400px;
+            // background-position: left;
+            margin-top: 40px;
+            background-size: contain;
+            transform: translateX(-450px);
+        }
 
-
+    }
 
 
 }
