@@ -1,12 +1,13 @@
 .hero{
 
-    background-image: url(../../images/hero-desktop-img.png);
-
-    background-position: center right;
-    background-repeat: no-repeat;
 
     &--container{
         padding: 70px 0;
+        background-image: url(../../images/hero-desktop-img.png);
+
+        background-position: center right;
+        background-repeat: no-repeat;
+
     }
     &__heading{
 
