@@ -12,7 +12,7 @@
     }
     &__heading{
         margin: 0;
-        max-width: 450px;
+        max-width: 430px;
         font-weight: 700;
         font-size: 48px;
         line-height: 48px;
@@ -66,6 +66,9 @@
             align-items: center;
         }
 
+        &__heading{
+            text-align: center;
+        }
         &__left{
             margin-top: 40px;
         }
