@@ -1,0 +1,80 @@
+.mask{
+
+    background-image: url(../../images/Mask-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--container{
+        padding: 102px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__heading{
+        margin: 0;
+        max-width: 450px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        background-color: #E5ECF4;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    &__link + &__link{
+        margin-left: 18px;
+    }
+    &__img{
+
+        margin-right: 12px;
+    }
+    &__left-desc{
+        margin: 0;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: #495567;
+    }
+    &__left-heading{
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: #495567;
+    }
+
+}
+@media only screen and(max-width:800px) {
+    .mask{
+
+        &--container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__left{
+            margin-top: 40px;
+        }
+
+
+
+
+
+
+
+    }
+}
